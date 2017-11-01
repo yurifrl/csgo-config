@@ -1,8 +1,9 @@
 26/10/2017 00:13
 
 Death descriptions:
+@TODO
 
-Notes:
+Notes (csgo wisdom):
 * span A and D so your hitbox became crazy, and you are hard to hit
 * your crosshair must be always in a point of interest
 * if someone is wide peking you get cover, but aim in his head, them go for the kill
