@@ -3,11 +3,6 @@
 MY_CONFIG="$HOME/csgo/configs"
 CSGO="$HOME/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg"
 
-ln -s -f "$MY_CONFIG/autoexec.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/fallen.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/yuri.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/aliases.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/help.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/crosshair.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/keys.cfg" "$CSGO"
-ln -s -f "$MY_CONFIG/CSGO-Bot-Rush" "$CSGO"
+find -L "$CSGO" -maxdepth 1 -type l -delete
+find "$MY_CONFIG" -name "*.cfg" -exec ln -s -f {} "$CSGO" \;
+
