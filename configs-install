@@ -1,8 +1,0 @@
-#!/bin/sh
-
-MY_CONFIG="$HOME/csgo/configs"
-CSGO="$HOME/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg"
-
-find -L "$CSGO" -maxdepth 1 -type l -delete
-find "$MY_CONFIG" -name "*.cfg" -exec ln -s -f {} "$CSGO" \;
-

@@ -35,4 +35,8 @@ Notes (csgo wisdom):
 * Peek 90 degrees
 * Jiggle Peeking is for baiting awp shoots
 * Jiggle Peeking peak close to the wall
+* hold your hang tight don't let the mouse loose for presision movements
+* u can run an shoot some pistols and smgs
 
+
+* -20 +2 para calcular smoke

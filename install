@@ -1,0 +1,12 @@
+#!/bin/sh
+
+MY_CSGO="$HOME/csgo"
+CSGO="$HOME/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo"
+
+echo '---> create configs links'
+find -L "$CSGO/cfg" -maxdepth 1 -type l -delete
+find "$MY_CSGO/cfg" -name "*.cfg" -exec ln -s -f {} "$CSGO/cfg" \;
+
+echo '---> create replays link'
+ln -s -f "$MY_CSGO/replays" "$CSGO/replays"
+
